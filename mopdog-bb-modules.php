@@ -19,3 +19,5 @@ function load_modules() {
         throw new Exception('Beaver Builder must be activated.');
     endif;
 }
+
+load_modules();
