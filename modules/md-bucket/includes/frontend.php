@@ -1,0 +1,1 @@
+<h1><?php echo $settings->heading; ?></h1>

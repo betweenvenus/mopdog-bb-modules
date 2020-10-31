@@ -4,7 +4,7 @@
  * A class that handles loading custom modules and custom
  * fields if the builder is installed and activated.
  */
-class FL_Custom_Modules_Example_Loader {
+class MD_Custom_Modules_Example_Loader {
 	
 	/**
 	 * Initializes the class once all plugins have loaded.
@@ -35,8 +35,8 @@ class FL_Custom_Modules_Example_Loader {
 	 * Loads our custom modules.
 	 */
 	static public function load_modules() {
-		require_once MOPDOGBB_DIR . 'modules/basic-example/basic-example.php';
-		require_once MOPDOGBB_DIR . 'modules/example/example.php';
+		require_once MOPDOGBB_DIR . 'modules/md-bucket/md-bucket.php';
+		// require_once MOPDOGBB_DIR . 'modules/example/example.php';
 	}
 	
 	/**
@@ -60,4 +60,4 @@ class FL_Custom_Modules_Example_Loader {
 	}
 }
 
-FL_Custom_Modules_Example_Loader::init();
+MD_Custom_Modules_Example_Loader::init();

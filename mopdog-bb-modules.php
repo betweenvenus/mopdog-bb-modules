@@ -11,13 +11,15 @@
 define( 'MOPDOGBB_DIR', plugin_dir_path( __FILE__ ) );
 define( 'MOPDOGBB_URL', plugins_url( '/', __FILE__ ) );
 
-function load_modules() {
-    if(class_exists('FLBuilder')):
-        // load stuff
-        require_once 'modules/md-bucket/md-bucket.php';
-    else:
-        throw new Exception('Beaver Builder must be activated.');
-    endif;
-}
+require_once MOPDOGBB_DIR . 'classes/class-fl-custom-modules-example-loader.php';
 
-load_modules();
+// function load_modules() {
+//     if(class_exists('FLBuilder')):
+//         // load stuff
+//         require_once 'modules/md-bucket/md-bucket.php';
+//     else:
+//         throw new Exception('Beaver Builder must be activated.');
+//     endif;
+// }
+
+// load_modules();

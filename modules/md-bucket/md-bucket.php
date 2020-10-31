@@ -8,8 +8,8 @@ class MDBBBucket extends FLBuilderModule
             'name' => __('Bucket', 'fl-builder'),
             'description' => __('Make a "bucket" - a column suitable for calling attention to major website features.', 'fl-builder'),
             'category' => __('Mopdog Modules', 'fl-builder'),
-            'dir' => MOPDOGBB_DIR . 'modules/md-bucket',
-            'url' => MOPDOGBB_URL . 'modules/md-bucket',
+            'dir' => MOPDOGBB_DIR . 'modules/md-bucket/',
+            'url' => MOPDOGBB_URL . 'modules/md-bucket/',
             'icon' => 'layout.svg',
         ));
     }
@@ -37,3 +37,4 @@ FLBuilder::register_module('MDBBBucket', array(
         )
     )
 ));
+
